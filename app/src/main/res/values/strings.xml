@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MusicalApp</string>
+    <string name="library_activity_name">Your songs</string>
+
+    <string name="s1name">Song 1 Name</string>
+    <string name="s2name">Song 2 Name</string>
+    <string name="s3name">Song 3 Name</string>
+    <string name="s4name">Song 4 Name</string>
+
+    <string name="s1artist">Song 1 Artist</string>
+    <string name="s2artist">Song 2 Artist</string>
+    <string name="s3artist">Song 3 Artist</string>
+    <string name="s4artist">Song 4 Artist</string>
+    <string name="title_activity_music_player">music_player</string>
+
+
+</resources>

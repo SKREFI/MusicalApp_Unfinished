@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".music_player">
+
+    <TextView
+        android:id="@+id/song"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_text_height"
+        android:layout_marginTop="150dp"
+        android:gravity="bottom"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_text_height"
+        android:layout_alignBottom="@id/song"
+        android:gravity="top"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/stop_botton"
+        style="@style/alignBottomImages"
+        android:paddingBottom="32dp"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_stop" />
+
+    <ImageView
+        android:id="@+id/play_botton"
+        style="@style/alignBottomImages"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="32dp"
+        android:src="@drawable/ic_play_arrow" />
+
+    <ImageView
+        android:id="@+id/pause_botton"
+        style="@style/alignBottomImages"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="32dp"
+        android:paddingRight="16dp"
+        android:src="@drawable/ic_pause" />
+
+
+</RelativeLayout>
