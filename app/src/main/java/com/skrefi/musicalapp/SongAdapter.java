@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 
 public class SongAdapter extends ArrayAdapter<Song>{
-    public SongAdapter(Context context,ArrayList<Song> songs){
+    public SongAdapter(Context context,List<Song> songs){
         super(context,0,songs);
     }
 
