@@ -37,6 +37,7 @@ public class Library extends AppCompatActivity {
                 Intent intent = new Intent(Library.this,music_player.class);
                 intent.putExtra("nameSong",currentItem.getSongName());
                 intent.putExtra("artistName",currentItem.getSongArtist());
+
                 startActivity(intent);
             }
         });
