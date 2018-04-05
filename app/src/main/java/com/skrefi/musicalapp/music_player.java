@@ -14,7 +14,6 @@ public class music_player extends AppCompatActivity {
 
         TextView songTextView = findViewById(R.id.song);
         TextView artistTextView = findViewById(R.id.artist);
-        ImageView imageView = findViewById(R.id.song_image);
 
         final Bundle extras = getIntent().getExtras();
 
