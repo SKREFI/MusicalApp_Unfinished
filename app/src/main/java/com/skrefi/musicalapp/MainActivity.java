@@ -26,6 +26,5 @@ public class MainActivity extends AppCompatActivity {
 
         but1=findViewById(R.id.library_button);
         init();
-
     }
 }

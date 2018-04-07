@@ -3,13 +3,15 @@ package com.skrefi.musicalapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.skrefi.musicalapp.Constants.KEY_SONG_ARTIST;
+import static com.skrefi.musicalapp.Constants.KEY_SONG_NAME;
 
 public class Library extends AppCompatActivity {
 
@@ -26,7 +28,7 @@ public class Library extends AppCompatActivity {
 
         SongAdapter songAdapter = new SongAdapter(this,songs);
 
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = (ListView) findViewById(R.id.library_songs_listview);
 
         listView.setAdapter(songAdapter);
 
@@ -34,9 +36,9 @@ public class Library extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Song currentItem = songs.get(position);
-                Intent intent = new Intent(Library.this,music_player.class);
-                intent.putExtra("nameSong",currentItem.getSongName());
-                intent.putExtra("artistName",currentItem.getSongArtist());
+                Intent intent = new Intent(Library.this,MusicPlayer.class);
+                intent.putExtra(KEY_SONG_NAME,currentItem.getSongName());
+                intent.putExtra(KEY_SONG_ARTIST,currentItem.getSongArtist());
 
                 startActivity(intent);
             }

@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="@dimen/list_item_height"
     android:orientation="horizontal">
-
-    <RelativeLayout
-        android:id="@+id/text_container"
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/library_songs_listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp"
-        android:paddingLeft="30dp">
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"
+        android:orientation="vertical" />
 
-        <TextView
-            android:id="@+id/song_name"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/list_text_height"
-            android:gravity="bottom"
-            android:textAppearance="?android:textAppearanceLarge"
-            tools:text="Song name" />
-
-        <TextView
-            android:id="@+id/song_artist"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/list_text_height"
-            android:textAppearance="?android:textAppearanceMedium"
-            tools:text="Song artist" />
-    </RelativeLayout>
 </RelativeLayout>

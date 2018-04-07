@@ -20,7 +20,7 @@
             android:name=".Library"
             android:label="@string/library_activity_name" />
         <activity
-            android:name=".music_player"
+            android:name=".MusicPlayer"
             android:label="@string/title_activity_music_player"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
