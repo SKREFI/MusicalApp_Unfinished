@@ -7,9 +7,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.skrefi.musicalapp.Constants.KEY_SONG_ARTIST;
 import static com.skrefi.musicalapp.Constants.KEY_SONG_NAME;
 
-public class MusicPlayer extends AppCompatActivity {
+public class MusicPlayer extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +23,14 @@ public class MusicPlayer extends AppCompatActivity {
         final Bundle extras = getIntent().getExtras();
 
         songTextView.setText(extras.getString(KEY_SONG_NAME));
-        artistTextView.setText(extras.getString(KEY_SONG_NAME));
+        artistTextView.setText(extras.getString(KEY_SONG_ARTIST));
 
         ImageView stopView = findViewById(R.id.stop_button);
         ImageView playView = findViewById(R.id.play_button);
         ImageView pauseView = findViewById(R.id.pause_button);
-        stopView.setOnClickListener((View.OnClickListener) this);
-        playView.setOnClickListener((View.OnClickListener) this);
-        pauseView.setOnClickListener((View.OnClickListener) this);
+        stopView.setOnClickListener(this);
+        playView.setOnClickListener(this);
+        pauseView.setOnClickListener(this);
     }
 
     public void onClick(View v){
