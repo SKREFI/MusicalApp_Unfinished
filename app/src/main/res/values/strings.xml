@@ -13,5 +13,9 @@
     <string name="s4artist">Song 4 Artist</string>
     <string name="title_activity_music_player">music_player</string>
 
+    <string name="stopButtonDescription">The button used to stop the song</string>
+    <string name="playButtonDescription">Is not visible initially but will if the pause button is pressed</string>
+    <string name="pauseButtonDescription">it is visible and will go invisible if it is pressed and play_button will take it's place</string>
+    <string name="backButtonDescription">The button that goes back to the list</string>
 
 </resources>
